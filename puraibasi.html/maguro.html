@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>寿司</title>
+</head>
+<body>
+    <label for="isbn">寿司：</label>
+    <select name="isbn" id="isbn">
+      <option value="">---好きな寿司を選んでください---</option>
+      <option value="maguro.html">マグロ</option>
+      <option value="sarmon.html">サーモン</option>
+      <option value="egg.html">たまご</option>
+    </select>
+  </form>
+<img src="C:\Users\yonai kanta\Pictures\Camera Roll\magu.jpg" alt="マグロの画像">
+  <script>
+  document.addEventListener('DOMContentLoaded',function() {
+    document.getElementById('isbn').addEventListener('change',function(){
+      location.href = "" + this.value;
+    },false);
+    
+  },false)
+  </script>
+
+</body>
+</html>
