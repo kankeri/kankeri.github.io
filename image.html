@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>お気に入り画像（犬）</title>
+<style>
+    #image{
+        width:500px;
+        height:500px;
+    }
+</style>
+<script>
+window.addEventListener("load", function(){
+
+    // 画像インデックス
+    var imageIndex = 0;
+
+    // リスナー登録
+    document.getElementsByTagName("button")[0].addEventListener("click", function(){
+        // 画像イメージをインクリメント
+        if (imageIndex < 3) {
+            imageIndex++;
+        } else {
+            imageIndex = 0;
+        }
+        // 画像srcを変更
+        switch(imageIndex) {
+            case 0:
+                imageSrc = "./images/chairo.jpg";
+                break;
+            case 1:
+                imageSrc = "./images/hutoshi.jpg";
+                break;
+            case 2:
+                imageSrc = "./images/inu.jpg";
+                break;
+            case 3:
+                imageSrc = "./images/shiro.jpg";
+                break;
+           
+        }
+        document.getElementById("image").src = imageSrc;
+
+    }, false);
+});
+
+document.addEventListener('DOMContentLoaded',function(){
+                   document.getElementById('drop').addEventListener('change',function(){
+                       location.href = "https://kankeri.github.io/puraibasi.html/" + this.value;
+                   },false);
+               },false);
+</script>
+</head>
+<body>
+
+        <form name="samon.html"action="samon.html">
+                <label for="drop">メニュー:</label>
+           <select name="drop" id="drop">
+                <option value="">---ネタを選んでください---</option>
+                <option value="maguro.html"/>マグロ</option>
+                <option value="sarmon.html"/>サーモン</option>
+                <option value="egg.html">たまご</option>
+                <option value="git.html">オクトキャット</option>
+                <option value="image.html">お気に入り画像集</option>
+           </select>
+      </form>
+<button>画像を変更</button>
+<p><img id ="image" src= "images/chairo.jpg"; alt="犬" /></p>
+</body>
+</html>

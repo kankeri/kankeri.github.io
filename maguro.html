@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>寿司</title>
 </head>
+
 <body>
+  <form name="samon.html" action="samon.html">
     <label for="isbn">寿司：</label>
     <select name="isbn" id="isbn">
       <option value="">---好きな寿司を選んでください---</option>
@@ -14,17 +17,19 @@
       <option value="sarmon.html">サーモン</option>
       <option value="egg.html">たまご</option>
       <option value="git.html">使い方</option>
+      <option value="image.html">お気に入り画像集</option>
     </select>
-</form>
-<img src="https://kankeri.github.io/magu.jpg" alt="マグロの画像">
+  </form>
+  <img src="https://kankeri.github.io/magu.jpg" alt="マグロの画像">
   <script>
-  document.addEventListener('DOMContentLoaded',function() {
-    document.getElementById('isbn').addEventListener('change',function(){
-      location.href = "https://kankeri.github.io/puraibasi.html/" + this.value;
-    },false);
-    
-  },false)
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('isbn').addEventListener('change', function () {
+        location.href = "https://kankeri.github.io/puraibasi.html/" + this.value;
+      }, false);
+
+    }, false)
   </script>
 
 </body>
+
 </html>
