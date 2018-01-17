@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>time</title>
+  <style>
+    header {
+      height: 100px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 70px;
+      padding-top: 20px;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      min-width: 1024px;
+    }
+
+    #menu {
+      text-align: center;
+      height: 30px;
+      padding-top: 10px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <header id="no4">タイマー</header>
+  <div id="menu">
+    <form action="">
+      <label for="isbn"></label>
+      <select name="isbn" id="isbn">
+          <option value>選択してください</option> 
+          <option value="maguro.html">マグロ</option>
+          <option value="sarmon.html">サーモン</option>
+          <option value="egg.html">タマゴ</option>
+          <option value="githubtutorial.html">Github使い方</option>
+          <option value="mesoddo.html">メソッドの使い方</option>
+          <option value="burauzahantei.html">ブラウザ判定</option>
+          <option value="time.html">タイマー</option>
+          <option value="git.html">使い方</option>
+          <option value="image.html">お気に入り画像集</option>
+      </select>
+    </form>
+  </div>
+  <center>
+    <br>
+    <form name="timer">
+      <input type="text" size="2">分
+      <input type="text" size="2">秒
+      <input type="button" value="Start" onclick="countStart()">
+    </form>
+  </center>
+  <script>
+
+    var timerdesu = "";
+    //タイマー
+
+    function countStart() {
+      document.timer.elements[2].disabled = true;
+      timerdesu = setInterval("countDown()", 1000);
+    }
+
+    //カウントダウン関数
+    function countDown() {
+      var min = document.timer.elements[0].value;
+      var sec = document.timer.elements[1].value;
+
+      if ((min == "") && (sec == ""))  //両方未入力の場合
+      {
+        window.alert("入力されてないよ");
+        reSet();
+      }
+      else {
+        if (min == "") min = 0;
+        min = parseInt(min);
+
+        if (sec == "") sec = 0;
+        sec = parseInt(sec);
+
+        tmWrite(min * 60 + sec - 1);
+      }
+    }
+
+    function tmWrite(int) {
+      int = parseInt(int);
+
+      if (int <= 0) {
+        reSet();
+        window.alert("時間です");
+      }
+      else {
+
+        document.timer.elements[0].value = Math.floor(int / 60);
+        document.timer.elements[1].value = int % 60;
+        //誤差をおこさないため
+      }
+    }
+
+    //最初に戻す
+    function reSet() {
+      document.timer.elements[0].value = "0";
+      document.timer.elements[1].value = "0";
+      document.timer.elements[2].disabled = false;
+      clearInterval(timerdesu);
+    }
+
+    document.addEventListener('DOMContentLoaded',function() {
+        document.getElementById('isbn').addEventListener('change',function() {
+            location.href = this.value;
+        },false);
+    },false);
+  </script>
+</body>
+
+</html>

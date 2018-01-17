@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>メソッド</title>
+</head>
+<body>
+        <select name="isbn" id="isbn">
+                <option value>選択してください</option> 
+                <option value="maguro.html">マグロ</option>
+                <option value="sarmon.html">サーモン</option>
+                <option value="egg.html">タマゴ</option>
+                <option value="git.html">Github使い方</option>
+                <option value="mesoddo.html">メソッドの使い方</option>
+                <option value="burauzahantei.html">ブラウザ判定</option>
+                <option value="time.html">タイマー</option>
+                <option value="git.html">使い方</option>
+                <option value="image.html">お気に入り画像集</option>
+            </select>
+        </form>
+    
+        <h1>メソッドの使い方</h1>
+    
+        <p>ここではwindow.open() close() focus() の説明をしていきたいと思います！</p>
+        <h2>window.open()</h2>
+        <h4>構文</h4>
+        <pre>
+            <h3>
+         var win = window.open(url, name [, features]);
+            </h3>
+        </pre>
+        <p id="choi">window.open( URL, ウィンドウ名 [,オプション] )</p>
+        <h4>説明</h4>
+        <p>window.open( url, name, features )は新しい副ブラウザウィンドウを生成し、参照されているリソースをロードします。
+            <br>第２引数「name」に指定したウィンドウやフレームに、第１引数「URL」に指定したドキュメントを読み込むメソッドです。
+            <br>第３引数「features」にウィンドウの表示スタイルを指定できます。</p>
+        <h4>引数</h4>
+        <P id="choi">url</P>
+        <p>新たに開くウィンドウで読み込むドキュメントのURLを指定。
+        <br>指定しない場合、「about:blank」の新たなウィンドウを開く。</p>
+        <p id="choi">name</p>
+        <p>_blankや_selfなどのターゲット属性値か、ウィンドウ名を指定する。
+            <br>(_blank：新規ウィンドウにドキュメントを読み込む。)
+            <br>(_self：現在のフレーム、もしくは、現在のウィンドウにドキュメントを読み込む。)などなど</p>
+        <p id="choi">features</p>
+        <p>新たに開くウィンドウの表示スタイルを指定。カンマ区切りで複数指定できる。</p>
+        <p>ほかにも様々な引数があります。</p>
+        <h5>サンプル</h5>
+        <p>ボタンをクリックすると別ウィンドウが開くようにしてみました。
+        <br>今回はお気に入りの画像集が開くように設定してあります。</p>
+        
+        <p>コードはこんな感じです</p>
+        <pre>
+       
+        </pre>
+    
+        <h2>window.close()</h2>
+        <h4>構文</h4>
+        <pre>
+            <h3>
+        window.close();
+            </h3>
+        </pre>
+        <h4>説明</h4>
+        <p>window.close()はウィンドウを閉じるメソッドです。</p>
+        <h5>サンプル</h5>
+        <p>サンプルで試してみましょう</p>
+       
+         <p>コードはこんな感じです</p>
+         <pre>
+             <h3>
+     &lt;input type="button" value="サンプルを閉じる" onclick="window.close()">
+             </h3>
+         </pre>
+    
+         <h2>window.focus()</h2>
+         <h4>説明</h4>
+         <p>focusメソッドは指定したウィンドウにフォーカスをあてます。
+            <br>ウィンドウが重なっている場合には指定したウィンドウが前面へ移動する</p>
+        <h5>サンプル</h5>
+        <p>サンプルで確かめてみましょう。</p>
+        <script>
+                function sampleOpenWindow() {
+                    sampleWindow = window.open('samplef.html', 'sample', 'width=300,height=300');
+                    sampleWindow.focus();
+                }
+            </script>
+        
+        <p id="choi">JavaScriptの場合</p>
+        <pre>
+            <h3>
+        &lt;function sampleOpenWindow() {
+        sampleWindow = window.open( 'samplef.html', 'sample', 'width=300,height=300' );
+        sampleWindow.focus();}
+     &lt;/script>
+            </h3>
+        </pre>
+        <p id="choi">HTMLの場合</p>
+        <pre>
+            <h3>
+     &lt;div class="sample">
+     &lt;button onclick="sampleOpenWindow()">サンプル&lt;/button>
+     &lt;/div>
+            </h3>
+        </pre>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+            document.getElementById('osusi').addEventListener('change',function(){
+        　　location.href = 'https://terufotball417soccer.github.io/'+ this.value;
+        },false);
+            },false);
+        
+        </script>
+    </html>
+</body>
+</html>

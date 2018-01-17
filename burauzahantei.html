@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Navigatorオブジェクトテスト用コード</title>
+<script>
+// ユーザエージェント書き込み関数
+var writeUserAgent = function() {
+    document.getElementById("userAgent").innerHTML = navigator.userAgent;
+}
+// リスナー登録
+window.addEventListener("load", function(){
+    document.getElementById("showUserAgent").addEventListener("click", writeUserAgent, false);
+});
+
+</script>
+</head>
+<body>
+        <form>
+                <label for="isbn"></label>
+                <select id="isbn" name="isbn">
+                                <option value>選択してください</option> 
+                                <label for="isbn">寿司ネタ：</label>
+                                <option value="maguro.html">マグロ</option>
+                                <option value="sarmon.html">サーモン</option>
+                                <option value="egg.html">タマゴ</option>
+                                <option value="githubtutorial.html">Github使い方</option>
+                                <option value="mesoddo.html">メソッドの使い方</option>
+                                <option value="burauzahantei.html">ブラウザ判定</option>
+                                <option value="time.html">タイマー</option>    
+                </select>
+            </form>
+アプリケーション名：<span id="appName"></span></br>
+バージョン：<span id="appVersion"></span></br>
+　　<input type="button" id="showUserAgent" value="ユーザエージェント表示"></br>
+    ユーザエージェント名：<p id="userAgent"></p>
+ 
+    <script>
+        document.getElementById("appName").innerHTML = navigator.appName;
+        document.getElementById("appVersion").innerHTML = navigator.appVersion;
+        document.addEventListener('DOMContentLoaded',function() {
+        document.getElementById('isbn').addEventListener('change',function() {
+            location.href = this.value;
+        },false);
+    },false);
+        var ua = navigator.userAgent.toLowerCase();
+var ver = navigator.appVersion.toLowerCase();
+ 
+// IE(11以外)
+var isMSIE = (ua.indexOf('msie') > -1) && (ua.indexOf('opera') == -1);
+// IE6
+var isIE6 = isMSIE && (ver.indexOf('msie 6.') > -1);
+// IE7
+var isIE7 = isMSIE && (ver.indexOf('msie 7.') > -1);
+// IE8
+var isIE8 = isMSIE && (ver.indexOf('msie 8.') > -1);
+// IE9
+var isIE9 = isMSIE && (ver.indexOf('msie 9.') > -1);
+// IE10
+var isIE10 = isMSIE && (ver.indexOf('msie 10.') > -1);
+// IE11
+var isIE11 = (ua.indexOf('trident/7') > -1);
+// IE
+var isIE = isMSIE || isIE11;
+// Edge
+var isEdge = (ua.indexOf('edge') > -1);
+ 
+// Google Chrome
+var isChrome = (ua.indexOf('chrome') > -1) && (ua.indexOf('edge') == -1);
+// Firefox
+var isFirefox = (ua.indexOf('firefox') > -1);
+// Safari
+var isSafari = (ua.indexOf('safari') > -1) && (ua.indexOf('chrome') == -1);
+// Opera
+var isOpera = (ua.indexOf('opera') > -1);
+ 
+ 
+// 使用例
+
+if(isIE6) {
+    alert('お使いのブラウザはIE6ですね');
+}
+if(isIE7) {
+    alert('お使いのブラウザはIE7ですね');
+}
+if(isIE8) {
+    alert('お使いのブラウザはIE8ですね');
+}
+if(isIE9) {
+    alert('お使いのブラウザはIE9ですね');
+}
+if(isIE10) {
+    alert('お使いのブラウザはIE10ですね');
+}
+if(isIE11) {
+    alert('お使いのブラウザはIE11ですね');
+}
+if(isEdge) {
+    alert('お使いのブラウザはEdgeですね');
+}
+ 
+if(isChrome) {
+    alert('お使いのブラウザはGoogle Chromeですね');
+}
+if(isFirefox) {
+    alert('お使いのブラウザはFirefoxですね');
+}
+if(isSafari) {
+    alert('お使いのブラウザはSafariですね');
+}
+if(isOpera) {
+    alert('お使いのブラウザはOperaですね');
+}
+    </script>
+</body>
+</html>
