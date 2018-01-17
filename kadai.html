@@ -1,52 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>Sample4</title>
-<script type="text/javascript">
-    function Sample4(){
- 
-                var hoge = Sample4_form.drop.value;
-                switch(hoge){
-                    case '日曜日':
-                    document.getElementById('week').textContent='市場に行って';
-                    break;
-                    case '月曜日':
-                    document.getElementById('week').textContent='お風呂を焚いて';
-                    break;
-                    case '火曜日':
-                    document.getElementById('week').textContent='お風呂に入り';
-                    break;
-                    case '水曜日':
-                    document.getElementById('week').textContent='友達が来て';
-                    break;
-                    case '木曜日':
-                    document.getElementById('week').textContent='送っていった';
-                    break;
-                    case '金曜日':
-                    document.getElementById('week').textContent='糸巻もせず';
-                    break;
-                    case '土曜日':
-                    document.getElementById('week').textContent='おしゃべりばかり';
-                    break;
-                }
-    }
-</script>
+<meta charset="UTF-8">
+<title>if文</title>
 </head>
- 
 <body>
-    <form name="Sample4_form" action="form_sample4.html">
-        <select name="drop">
-            <option value="日曜日"/>日曜日</option>
-            <option value="月曜日"/>月曜日</option>
-            <option value="火曜日"/>火曜日</option>
-            <option value="水曜日"/>水曜日</option>
-            <option value="木曜日"/>木曜日</option>
-            <option value="金曜日"/>金曜日</option>
-            <option value="土曜日"/>土曜日</option>
-            <input type="button" value="決定" onclick="Sample4()">
-        </select>
-        <p id='week'></p>
-    </form>
+<p>個数を選択してください</p>
+<form>
+<select>
+<script>
+var i;
+for(i=10; i<105; i+=5){
+document.write('<option value="'+i+'">'+i+'個</option>');
+}
+</script>
+</select>
+</form>
 </body>
 </html>
