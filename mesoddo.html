@@ -1,119 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>メソッド</title>
+    <title>メソッドの使い方</title>
 </head>
 <body>
-        <select name="isbn" id="isbn">
-                <option value>選択してください</option> 
-                <option value="maguro.html">マグロ</option>
-                <option value="sarmon.html">サーモン</option>
-                <option value="egg.html">タマゴ</option>
-                <option value="git.html">Github使い方</option>
-                <option value="mesoddo.html">メソッドの使い方</option>
-                <option value="burauzahantei.html">ブラウザ判定</option>
-                <option value="time.html">タイマー</option>
-                <option value="git.html">使い方</option>
-                <option value="image.html">お気に入り画像集</option>
-            </select>
-        </form>
-    
-        <h1>メソッドの使い方</h1>
-    
-        <p>ここではwindow.open() close() focus() の説明をしていきたいと思います！</p>
-        <h2>window.open()</h2>
-        <h4>構文</h4>
-        <pre>
-            <h3>
-         var win = window.open(url, name [, features]);
-            </h3>
-        </pre>
-        <p id="choi">window.open( URL, ウィンドウ名 [,オプション] )</p>
-        <h4>説明</h4>
-        <p>window.open( url, name, features )は新しい副ブラウザウィンドウを生成し、参照されているリソースをロードします。
-            <br>第２引数「name」に指定したウィンドウやフレームに、第１引数「URL」に指定したドキュメントを読み込むメソッドです。
-            <br>第３引数「features」にウィンドウの表示スタイルを指定できます。</p>
-        <h4>引数</h4>
-        <P id="choi">url</P>
-        <p>新たに開くウィンドウで読み込むドキュメントのURLを指定。
-        <br>指定しない場合、「about:blank」の新たなウィンドウを開く。</p>
-        <p id="choi">name</p>
-        <p>_blankや_selfなどのターゲット属性値か、ウィンドウ名を指定する。
-            <br>(_blank：新規ウィンドウにドキュメントを読み込む。)
-            <br>(_self：現在のフレーム、もしくは、現在のウィンドウにドキュメントを読み込む。)などなど</p>
-        <p id="choi">features</p>
-        <p>新たに開くウィンドウの表示スタイルを指定。カンマ区切りで複数指定できる。</p>
-        <p>ほかにも様々な引数があります。</p>
-        <h5>サンプル</h5>
-        <p>ボタンをクリックすると別ウィンドウが開くようにしてみました。
-        <br>今回はお気に入りの画像集が開くように設定してあります。</p>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+                   document.getElementById('drop').addEventListener('change',function(){
+                       location.href = this.value;
+                   });
+               });
+　　</script>
+
+
+
+
+<body>
+    <form name="salmon.html" action="salmon.html">
+        <select name="drop" id="drop">
+            <option value="">寿司を選択</option>
+            <option value="maguro.html">マグロ</option>
+            <option value="egg.html">たまご</option>
+            <option value="sarmon.html">サーモン</option>
+            <option value="git.html">オクトキャット</option>
+            <option value="images.html">お気に入り画像集</option>
+            <option value="brauzahantei.html">ブラウザ判定</option>
+            <option value="mesoddo.html">メソッドの使い方</option>
+            <option value="time.html">タイマー</option>
+            <option value="githubtutorial.html">Github使い方</option>
+        </select>
+    </form>
+    <h1>メソッドの使い方</h1>
+    <h2>window.open</h2>
+    <p>各引数の文字列は一重引用符または二重引用符で括って指定します。
         
-        <p>コードはこんな感じです</p>
-        <pre>
-       
-        </pre>
-    
-        <h2>window.close()</h2>
-        <h4>構文</h4>
-        <pre>
-            <h3>
-        window.close();
-            </h3>
-        </pre>
-        <h4>説明</h4>
-        <p>window.close()はウィンドウを閉じるメソッドです。</p>
-        <h5>サンプル</h5>
-        <p>サンプルで試してみましょう</p>
-       
-         <p>コードはこんな感じです</p>
-         <pre>
-             <h3>
-     &lt;input type="button" value="サンプルを閉じる" onclick="window.close()">
-             </h3>
-         </pre>
-    
-         <h2>window.focus()</h2>
-         <h4>説明</h4>
-         <p>focusメソッドは指定したウィンドウにフォーカスをあてます。
-            <br>ウィンドウが重なっている場合には指定したウィンドウが前面へ移動する</p>
-        <h5>サンプル</h5>
-        <p>サンプルで確かめてみましょう。</p>
-        <script>
-                function sampleOpenWindow() {
-                    sampleWindow = window.open('samplef.html', 'sample', 'width=300,height=300');
-                    sampleWindow.focus();
-                }
-            </script>
+        <br>第１引数「URL」は生成されるウィンドウに表示するページのURLです。 
+        ※ ウィンドウに表示するページ（別のファイル）は別途作成して用意しておきます。 
         
-        <p id="choi">JavaScriptの場合</p>
-        <pre>
-            <h3>
-        &lt;function sampleOpenWindow() {
-        sampleWindow = window.open( 'samplef.html', 'sample', 'width=300,height=300' );
-        sampleWindow.focus();}
-     &lt;/script>
-            </h3>
-        </pre>
-        <p id="choi">HTMLの場合</p>
-        <pre>
-            <h3>
-     &lt;div class="sample">
-     &lt;button onclick="sampleOpenWindow()">サンプル&lt;/button>
-     &lt;/div>
-            </h3>
-        </pre>
-        <script>
-            document.addEventListener('DOMContentLoaded',function(){
-            document.getElementById('osusi').addEventListener('change',function(){
-        　　location.href = 'https://terufotball417soccer.github.io/'+ this.value;
-        },false);
-            },false);
+        <br>第２引数「ウィンドウ名」は特に指定する必要がなければ null で良いでしょう。 ウィンドウ名を指定するときは引用符で括ります。 
+        ※ null を指定するとウィンドウ名の設定されていない新規ウィンドウとなります。 (HTMLの属性 target="_blank" と同等です)
+        例: window.open('example.html', null);
         
-        </script>
-    </html>
+        <br>第３引数「オプション」はウィンドウの特徴を設定する文字列です。 この文字列は複数のパラメーターをカンマで区切って指定しますので、 一重引用符または二重引用符で括る部分を間違えないよう注意が必要です。 オプションを省略すると単にブラウザの新規ウィンドウと同様になります。
+        
+        <br>パラメーターは他にも各ブラウザ独自のものなどありますが、 主要なものは次の通りです。
+        <br>window.open(URL,ウィンドウ名[オプション])</p>
+        <br>&lt;form><br>
+        &lt;input type="button" value=" " onclick="window.open('https://montblanc3456.github.io/image.html')"><br>
+        &lt;/form><br>
+
+        <h2>window.close</h2>
+        <p>
+            <br>現在のウィンドウ、またはそのページ上で呼び出されたウィンドウを閉じます。
+            
+            <br>このメソッドが許可されるのは、window.open() メソッドを用いたスクリプトにより開かれたウィンドウに対する呼び出しのみです。ウィンドウがスクリプトにより開かれたものでない場合、次のようなエラーがコンソールに表示されます: スクリプトはスクリプトによって開かれたウィンドウ以外を閉じることができません。
+            <br>&lt;input type="button" value="サンプルを閉じる" onclick="window.close()">
+            
+        </p>
+        <h3>window.focus</h3>
+        <p>
+            focusメソッドは、指定したウィンドウにフォーカスをあてます。ウィンドウが重なっている場合には、指定したウィンドウが前面へ移動します。
+        <br>jsの場合
+            <br>&lt;function sampleOpenWindow() {
+            sampleWindow = window.open( 'samplef.html', 'sample', 'width=300,height=300' );
+            sampleWindow.focus();}
+        &lt;/script>
+　　　　　<br>HTMLの場合
+         <br>&lt;div class="sample">
+         &lt;button onclick="sampleOpenWindow()">サンプル&lt;/button>
+         &lt;/div>
+        </p>
+
+    
 </body>
-</html>
