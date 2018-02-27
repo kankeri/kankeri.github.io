@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .toTop {
+  margin-top: 400px;
+  display: inline-block;
+  background: rgb(0, 221, 18);
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+body {font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",
+Meiryo,"メイリオ",Helvetica,Sans-Serif;}
+.open{
+  background: rgb(0, 255, 98);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 50px;
+  padding: 10px;
+}
+#slideBox{
+  padding: 10px; 
+  border: 1px #ccc solid;
+  display: none;
+}
+body {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
+}
+.deleteBox {
+  border: #ccc 1px solid;
+  padding: 10px;
+}
+.deleteBox .delete {
+  cursor: pointer;
+  color: rgb(7, 221, 0);
+  margin-top:10px;
+  font-size: 50px
+}
+body {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
+}
+</style>
+</head>
+<body>
+    <h1>＜Jquery1つ目＞</h1>
+        <p><img src ="jjj.png"></p>
+        <p class="toTop"><img src ="ao.png" width="450px" height="350px"></p>
+        <h2>今開いてるページの上部に移動するで。よく見かけるものやから使えるようにした方がいいぞ。</h2>
+        <h1>＜Jquery2つ目＞</h1>
+        <p class="open">ボタン</p>
+<div id="slideBox">
+  スライドパネル。画面内わちゃわちゃしないようにを使ってみるんや！
+</div>
+<h2>ボタンをクリックすると文字がでてくるで。もう一回クリックすると消えるんや！</h2>
+<h1>＜Jquery3つ目＞</h1>
+<div class="deleteBox">
+        <p>エラー表示時に便利なんやで。</p>
+        <p class="delete">[close]</p>
+      </div>
+      <h2>closeをクリックすると言葉が消えるで</h2>
+      <p>引用元: <a href="https://www.webcreatorbox.com/tech/jquery-tips20">https://www.webcreatorbox.com/tech/jquery-tips20</a></p>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script>
+  $(function(){
+    $('.toTop').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+  </script>
+  <script>
+  $(function(){
+        $(".open").click(function(){
+          $("#slideBox").slideToggle("slow");
+        });
+    });
+    </script>
+<script>
+    $(function () {
+    $(".deleteBox .delete").click(function(){
+        $(this).parents(".deleteBox").animate({ opacity: "hide" }, "slow"); 
+    });
+});
+</script>
+</body>
+</html>

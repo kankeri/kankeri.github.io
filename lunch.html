@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ランチメニュー</title>
+    <style>
+    h1 {
+color: rgb(166, 255, 0);/*文字色*/
+padding: 0.5em 0;/*上下の余白*/
+border-top: solid 3px rgb(73, 200, 222);/*上線*/
+border-bottom: solid 3px rgb(73, 205, 222);/*下線*/
+}
+body{
+    background-color: rgba(29, 231, 110, 0.411);
+}
+</style>
+</head>
+
+<body>
+    <form name="Sample3_form" action="form_sample3.html">
+        
+            <tr>
+                <th>
+                    <h1>ご注文は何にしますか！？</h1>
+                    <input type="radio" name="radio" value="蒙古タンメン" />蒙古タンメン
+                    <br>
+                    <input type="radio" name="radio" value="一楽ラーメン" />一楽ラーメン
+                    <br>
+                    <input type="radio" name="radio" value="節骨ラーメン" />節骨ラーメン
+                    <br>
+                </th>
+            </tr>
+        </table>
+        
+            <tr>
+                <th>
+                    <h1>オプションは何にしますか！？</h1>
+                    <input type="checkbox" name="check" />大盛り
+                    <br>
+                    <input type="checkbox" name="check" />チャーシュー飯
+                    <br>
+                    <input type="checkbox" name="check" />半チャーハン </br>
+                    <input type="checkbox" name="check" />餃子 </th>
+            </tr>
+        </table>
+        <br><input type="button" value="注文する" onclick="Sample3()">
+        </tr>
+    </form>
+    <script>
+        var time = "";
+        function Sample3() {
+
+            if (document.cookie == false) {
+
+                for (var i = 0; i < Sample3_form.radio.length; i++) {
+                    if (Sample3_form.radio[i].checked == true) {
+                        var hoge = Sample3_form.radio[i].value;
+                        var hage = "";
+
+                        var oomori = Sample3_form.check[0].checked;
+                        var cya = Sample3_form.check[1].checked;
+                        var hann = Sample3_form.check[2].checked;
+                        var gyou = Sample3_form.check[3].checked;
+
+                        if (oomori == true) {
+                            hage = hage + "と大盛";
+                        }
+                        if (cya == true) {
+                            hage = hage + "とチャーシュー飯";
+                        }
+                        if (hann == true) {
+                            hage = hage + "と半チャーハン";
+                        }
+                        if (gyou == true) {
+                            hage = hage + "と餃子";
+                        }
+                        alert(hoge + hage + "ですよね！？");
+                        document.cookie = hoge + hage + ";max-age=10;path=/";
+                        time = setInterval("count()", 120000);
+                    }
+
+                }
+            } else {
+                alert("お客様は注文済みですよ！！！" + "\n" + document.cookie + "です！" + "\n" + "少々お待ちくださいませー！");
+            }
+        }
+        
+        function count() {
+                alert("お待ちどう！！！");
+                clearInterval(time);
+            
+        }
+
+    </script>
+</body>
+
+</html>
