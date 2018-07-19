@@ -1,0 +1,652 @@
+@charset "UTF-8";
+
+/* オープンキャンパス
+===============================================*/
+
+/* kv
+-----------------------------------------------*/
+#ocKv{
+	margin-top:70px;
+	background:url(/img/oc/bg_kv.png) no-repeat center 0;
+	height:407px;
+}
+#ocKv .innerCont{
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+#ocKv h1{
+	text-align:center;
+	padding-top:66px;
+}
+#ocKv p{
+	position:absolute;
+	right:190px;
+	top:297px;
+	font-size:13px;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-align:center;
+	line-height:1.4;
+	width:81px;
+}
+#ocKv p span{
+	font-size:24px;
+	letter-spacing:0;
+}
+
+
+/* 体験授業
+-----------------------------------------------*/
+.taikenCont{
+	background:url(/img/oc/bg_dot.gif) repeat 0 0;
+}
+.courseBox{
+	width:980px;
+	margin:0 auto;
+	padding-top:52px;
+	background:url(/img/oc/bg_taiken_illust.png) no-repeat 0 49px;
+}
+.courseBox h2{
+	text-align:center;
+}
+.courseBox .innerCont{
+	margin-top:40px;
+}
+.courseBox .courseTit{
+	position:relative;
+}
+.courseTit li{
+	position:absolute;
+}
+.courseTit li.system{ top:-17px; left:-16px; }
+.courseTit li.business{ top:-17px; left:320px; }
+.courseTit li.design{ top:-17px; left:654px; }
+
+.courseBox .innerCont .add{
+	margin-top:-10px;
+}
+.courseBox .innerCont .add li{
+	padding-left: 1.3em;
+	text-indent: -1.3em;
+	font-size:12px;
+	padding-bottom:3px;
+}
+.courseBox .innerCont .add li a{
+    text-decoration: underline;
+}
+
+.taikenList{
+	width:1005px;
+	margin-right:-25px;
+	overflow:hidden;
+	clear:both;
+}
+
+.taikenList > li{
+	width:310px;
+	background:#fff;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-webkit-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-moz-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	overflow:hidden;
+	float:left;
+	margin:0 25px 30px 0;
+}
+.taikenList li .title{
+	position:absolute;
+	left:-16px;
+	top:-17px;
+}
+.taikenList li .img{
+	width:296px;
+	margin:7px 7px 0 7px;
+}
+.taikenList li p{
+	color:#666;
+	margin:16px 20px 0;
+	letter-spacing:0.5px;
+	text-align:justify;
+}
+.taikenList li p span{
+	display:block;
+	font-weight:bold;
+	color:#333;
+	margin:4px 0 -3px;
+}
+.taikenList li dl{
+	margin:8px 20px 15px;
+	background:url(/img/oc/line_dot_1.gif) repeat-x 0 0;
+	padding-top:14px;
+}
+.taikenList li dt{
+	margin-bottom:4px;
+}
+.taikenList li dl li{
+	font-weight:bold;
+	line-height:1.4;
+}
+.taikenList li dl li span{
+	font-size:12px;
+	font-weight:normal;
+}
+
+/* 三大特典
+-----------------------------------------------*/
+.tokutenBox{
+	width:974px;
+	padding:0 3px 40px;
+	margin:15px auto 0;
+	background:url(/img/oc/bg_tokuten.png) no-repeat 0 39px;
+	min-height:601px;
+}
+.tokutenBox h2{
+	text-align:center;
+}
+.tokutenBox ul{
+	overflow:hidden;
+	clear:both;
+	margin-top:34px;
+}
+.tokutenBox li{
+	width:264px;
+	float:left;
+	padding:0 29px 0 30px;
+	background:url(/img/oc/line_dot_2.gif) repeat-y 0 0;
+}
+.tokutenBox li:first-child{
+	background:none;
+}
+.tokutenBox li .tokutenTit{
+	text-align:center;
+}
+.tokutenBox li h3{
+	font-size:22px;
+	font-weight:bold;
+	line-height:1.3;
+	padding:16px 0 6px;
+	height:59px;
+	display:table-cell;
+	vertical-align:middle;
+}
+.tokutenBox li h3 small{
+	font-size:13px;
+}
+.tokutenBox li h3 span{
+	color:#0054a7;
+}
+.tokutenBox li p{
+	color:#666;
+	letter-spacing:0.5px;
+}
+.tokutenBox li p span{
+	font-size:12px;
+}
+.tokutenBox li a{
+	font-weight:bold;
+	background:url(/img/oc/icn_arrow.png) no-repeat 0 5px;
+	padding:0 0 0 17px;
+	color:#333;
+	display:inline-block;
+	margin-top:4px;
+	text-decoration:underline;
+}
+
+
+/* お申込みボタン
+-----------------------------------------------*/
+.omousikomi{
+	background:#fffcdf;
+}
+.omousikomi .inner{
+	width:1008px;
+	padding:48px 0 58px;
+	margin:0 auto;
+	background:url(/img/oc/img_btn.png) no-repeat 818px bottom;
+	text-align:center;
+}
+.omousikomi .inner p{
+	margin-left:4px;
+}
+.omousikomi .inner a{
+	padding:25px 0 20px;
+	display:block;
+	background:#0054a7;
+	width:602px;
+	margin:0 auto;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#fff;
+	font-size:28px;
+	font-weight:bold;
+	-moz-border-radius:5px;
+	margin-top:13px;
+}
+.omousikomi .inner span{
+	background:url(/img/oc/icn_btn_arrow.png) no-repeat 0 7px;
+	padding-left:61px;
+}
+
+
+/* 1日の流れ
+-----------------------------------------------*/
+.scheduleCont{
+	background:url(/img/oc/bg_line.gif) repeat 0 0;
+}
+.scheduleCont .innerCont{
+	width:980px;
+	margin:0 auto;
+	padding-bottom:49px;
+	background:url(/img/oc/bg_schedule_illust.png) no-repeat 0 44px;
+}
+.scheduleCont h2{
+	text-align:center;
+	padding-top:58px;
+}
+.scheduleCont ul{
+	margin-top:58px;
+	height:749px;
+	background:url(/img/oc/bg_schedule.png) no-repeat 2px 0;
+	position:relative;
+}
+.scheduleCont li{
+	width:200px;
+	position:absolute;
+}
+
+.scheduleCont li.step1{ top:-23px; left:12px;}
+.scheduleCont li.step2{ top:-23px; left:235px;}
+.scheduleCont li.step3{ top:-23px; left:487px;}
+.scheduleCont li.step4{ top:231px; left:521px;}
+.scheduleCont li.step5{ top:231px; left:47px;}
+.scheduleCont li.step6{ top:495px; left:47px;}
+.scheduleCont li.bus1{ top:-51px; left:90px;}
+.scheduleCont li.bus2{ top:459px; left:157px;}
+
+.scheduleCont li .time{
+	font-size:24px;
+	font-weight:bold;
+	color:#0054a7;
+	margin-top:2px;
+}
+.scheduleCont li h3{
+	font-size:24px;
+	font-weight:bold;
+	margin-top:-2px;
+}
+.scheduleCont li .txt{
+	line-height:1.5;
+}
+
+
+/* Q&A
+-----------------------------------------------*/
+.qaCont{
+	background:url(/img/oc/bg_dot.gif) repeat 0 0;
+}
+.qaCont .innerCont{
+	width:980px;
+	margin:0 auto;
+	padding-bottom:49px;
+	background:url(/img/oc/bg_qa_illust.png) no-repeat 0 39px;
+	position:relative;
+}
+.qaCont h2{
+	text-align:center;
+	padding-top:55px;
+}
+.qaCont dl{
+	background:#fff;
+	padding:7px 20px 15px;
+	margin-top:35px;
+}
+.qaCont dl dt{
+	background:url(/img/oc/bg_question.png) no-repeat 0 20px;
+	height:54px;
+	padding-top:21px;
+	padding-left:70px;
+	color:#033333;
+	font-size:20px;
+	font-weight:bold;
+	display:table-cell;
+	vertical-align:middle;
+	width:890px;
+}
+.qaCont dl dd{
+	font-size:16px;
+	margin-top:17px;
+	background:url(/img/oc/bg_dot_qa.gif) repeat-x 0 bottom;
+	padding-bottom:20px;
+	line-height:1.5;
+}
+.qaCont dl dd:last-child{
+	background:none;
+}
+.qaCont dl dd span{
+	display:block;
+	background:url(/img/oc/icn_answer.png) no-repeat 27px 0;
+	padding:4px 0 0 70px;
+	min-height:24px;
+}
+.qaCont dl dd a{
+	font-weight:bold;
+	background:url(/img/oc/icn_arrow.png) no-repeat 0 5px;
+	padding:0 0 0 17px;
+	color:#333;
+	display:inline-block;
+	margin-top:4px;
+	text-decoration:underline;
+}
+.qaCont .innerCont .qaimg{
+	position:absolute;
+}
+.qaCont .innerCont .qaimg.img1{
+	top:617px;
+	right:31px;
+}
+.qaCont .innerCont .qaimg.img2{
+	top:1062px;
+	right:31px;
+}
+
+
+/* 開催カレンダー
+-----------------------------------------------*/
+.calenderCont{
+	background:url(/img/oc/bg_line.gif) repeat 0 0;
+}
+.calenderCont .innerCont{
+	width:980px;
+	padding-bottom:32px;
+	margin:0 auto;
+	background:url(/img/oc/bg_taiken_illust.png) no-repeat 0 56px;
+}
+.calenderCont h2{
+	text-align:center;
+	padding-top:54px;
+}
+.calenderCont .lead{
+	text-align:center;
+	margin-top:20px;
+}
+.calenderCont .lead span{
+	background:url(/img/oc/icn_bus_black.png) no-repeat 0 2px;
+	padding-left:30px;
+}
+.calenderCont .lead a{
+	font-weight:bold;
+	background:url(/img/oc/icn_arrow.png) no-repeat 0 5px;
+	padding:0 0 0 16px;
+	color:#333;
+	display:inline-block;
+	margin:4px 0 0 10px;
+	text-decoration:underline;
+}
+.scheduleList{
+	overflow:hidden;
+	clear:both;
+	width:1000px;
+	margin-right:-20px;
+	margin-top:16px;
+}
+.scheduleList > li{
+	width:480px;
+	background:#fff;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-webkit-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-moz-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	overflow:hidden;
+	float:left;
+	margin:0 20px 20px 0;
+}
+.scheduleList .season{
+	height:23px;
+	margin:4px 4px 0 4px;
+	font-size:12px;
+	text-align:center;
+	color:#fff;
+	padding-top:34px;
+}
+.scheduleList .spring .season{
+	background:url(/img/oc/tit_calender_spring.png) no-repeat 0 0;
+}
+.scheduleList .summer .season{
+	background:url(/img/oc/tit_calender_summer.png) no-repeat 0 0;
+}
+.scheduleList .autumn .season{
+	background:url(/img/oc/tit_calender_autumn.png) no-repeat 0 0;
+}
+.scheduleList .winter .season{
+	background:url(/img/oc/tit_calender_winter.png) no-repeat 0 0;
+}
+.scheduleList dl{
+	clear:both;
+	overflow:hidden;
+	margin:0 10px;
+}
+.scheduleList dt,
+.consultation dt{
+	display:inline;
+	float:left;
+	text-indent:1px;
+	width:60px;
+	clear:both;
+	padding:7px 0 8px;
+}
+.scheduleList dd,
+.consultation dd{
+	width:382px;
+	padding:7px 0 8px 18px;
+	height:57px;
+	display:table-cell;
+	vertical-align:middle;
+	font-size:18px;
+	font-weight:bold;
+}
+.scheduleList .spring dt,
+.scheduleList .spring dd{
+	border-top:#ff77ac 1px solid;
+}
+.scheduleList .summer dt,
+.scheduleList .summer dd{
+	border-top:#f6be38 1px solid;
+}
+.scheduleList .autumn dt,
+.scheduleList .autumn dd{
+	border-top:#c46aaa 1px solid;
+}
+.scheduleList .winter dt,
+.scheduleList .winter dd{
+	border-top:#4889d1 1px solid;
+}
+.scheduleList dt:first-child,
+.scheduleList dd:nth-of-type(1){
+	border:none;
+}
+*+html .scheduleList dd{
+	float:none;
+}
+.scheduleList dd li{
+	display:inline-block;
+	margin-right:15px;
+}
+.scheduleList dd li a{
+	display:inline-block;
+	margin:0 0 0 3px;
+}
+.scheduleList dd li a img{
+	vertical-align:middle;
+}
+.calenderCont .add{
+	margin-top:-4px;
+}
+.calenderCont .add li{
+	padding-left: 1.3em;
+	text-indent: -1.3em;
+	font-size:12px;
+	padding-bottom:3px;
+}
+.calenderCont .add li a{
+    text-decoration: underline;
+}
+.consultation{
+    background:#fff;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+    -webkit-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+    -moz-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+    overflow:hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.consultation dt,
+.consultation dd{
+    border-top:#bfbfbf 1px solid;
+}
+.consultation dt.first,
+.consultation dd.first{
+    border-top: none;
+}
+.consultation dd{
+    width: 858px;
+}
+.consultation dd li{
+    display:inline-block;
+    margin-right:15px;
+}
+.titConsultation{
+    margin: 50px 0 20px;
+}
+
+
+/* 個別相談会(県外)マーク
+-----------------------------------------------*/
+.calenderOutsideSP{
+	color: #ff6da8;
+}
+.calenderOutsideSU{
+	color: #f7bf20;
+}
+
+
+/* 個別相談会
+-----------------------------------------------*/
+.counselingList{
+	overflow:hidden;
+	clear:both;
+	width:1000px;
+	margin-right:-20px;
+	margin-top:16px;
+}
+.counselingList > li{
+	width:480px;
+	background:#fff;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-webkit-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	-moz-box-shadow:rgba(28, 69, 87, 0.08) 0px 2px 2px 1px;
+	overflow:hidden;
+	float:left;
+	margin:0 20px 20px 0;
+}
+.counselingList > li .oc{
+	color: #c39300;
+	font-weight: bold;
+	font-size: 14px;
+	display: inline-block;
+	border: 3px solid #c39300;
+	margin-left: 6px;
+	padding: 0 6px 0;
+	line-height: 1.8;	
+	vertical-align: 1px;
+}
+
+.counselingList .listTitle{
+	height:23px;
+	margin:4px 4px 0 4px;
+	font-size:12px;
+	text-align:center;	
+	padding-top:34px;
+	color: #9a618a;
+}
+.counselingList .region .listTitle{
+	background:url(/img/oc/tit_counseling_region.png) no-repeat 0 0;
+}
+.counselingList .meeting .listTitle{
+	background:url(/img/oc/tit_counseling_meeting.png) no-repeat 0 0;
+}
+.counselingList .sosial .listTitle{
+	background:url(/img/oc/tit_counseling_sosial.png) no-repeat 0 0;
+}
+.counselingList dl{
+	clear:both;
+	overflow:hidden;
+	margin:0 10px 15px;
+}
+.counselingList .region dl{
+	margin-bottom: 18px;
+}
+.counselingList .sosial dl{
+	margin-bottom: 0;
+}
+.counselingList dt{
+	display:inline;
+	float:left;
+	text-indent:1px;
+	width:60px;
+	clear:both;
+	padding:10px 0 8px;
+	border-top:#9a618a 1px solid;
+}
+.counselingList dd{
+	width:382px;
+	padding:10px 0 8px 28px;
+	height:57px;
+	display:table-cell;
+	vertical-align:middle;
+	font-size:18px;
+	font-weight:bold;
+	border-top:#9a618a 1px solid;
+}
+
+.counselingList dt:first-child,
+.counselingList dd:nth-of-type(1){
+	border:none;
+}
+*+html .counselingList dd{
+	float:none;
+}
+.counselingList dd li{
+	display:inline-block;
+	margin-right:15px;
+}
+.counselingList dd li a{
+	display:inline-block;
+	margin:0 0 0 3px;
+}
+.counselingList dd li a img{
+	vertical-align:middle;
+}
+.counselingList .region dt{
+    padding: 10px 0 9px;
+}
+.counselingList .region dd{
+	padding: 10px 0 5px 124px;
+}
+.counselingList .region dd li{
+	display: block;
+}
+.counselingList .region dt:first-child ,
+.counselingList .region dd:nth-child(2) {
+	padding-top: 13px;
+}

@@ -1,0 +1,144 @@
+@charset "utf-8";
+body{
+    margin:0;
+    padding:0;
+}
+
+header{
+    width:100%;
+    height: 66px;
+    background: #fff;
+    border-top: 4px solid #0054a7;
+}
+
+.inner{
+    max-width: 980px;
+    margin:auto;
+    padding-top:22px;
+
+}
+
+main{
+    max-width:980px;
+    margin:auto;
+}
+
+main h2{
+    text-align: center;
+}
+
+main h2 img{
+    max-width:100%;
+}
+
+.movie{
+    background: #000;
+    width:100%;
+    height:407px;
+    text-align: center;
+    padding-top:100px;
+}
+
+.taiken{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.taiken2{
+    width: 300px;
+    height: 400px;
+    background: #fff;
+}
+.tokuten{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tokuten2{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border-right: 3px dotted #0054a7;
+}
+
+.tokuten2:last-child{
+    border-right: 0px;
+}
+
+.tokuten2 p{
+    text-align: left;
+}
+
+.sche{
+    max-width: 980px;
+    margin: auto;
+}
+
+.sche2 h3{
+    margin-top: -75px;
+    margin-left:100px;
+}
+
+.sche2 p{
+    margin-left: 100px;
+    margin-top: -10px;
+}
+
+.qanda{
+    max-width: 980;
+    margin: auto;
+}
+
+.qanda p{
+    font-weight:bold;
+    font-size: 24px;
+}
+
+.qanda span{
+    padding-right:20px;
+}
+
+.qanda .ques{
+    color:#0054a7;
+}
+
+.qanda .anws{
+    color:#FF6666;
+}
+
+.kyan{
+    font-size: 50px;             
+}
+
+header{
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    border-top: 4px solid #0054a7;
+    position: fixed;
+}
+header li{
+    display: inline-block;
+    margin: 10x auto 40px 20px;
+    vertical-align: center;
+}
+header nav a{
+    margin-left:30px;
+    padding-left: 10px;
+    margin-right: 20px;
+    padding-right: 10px;
+    overflow: hidden;
+    list-style:nome;
+    color: #0054a7
+
+}
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #999;
+    
+}

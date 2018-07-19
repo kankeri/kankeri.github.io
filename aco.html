@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="aco.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+        <ul class="accordion1">
+                <li>
+                    <p class="ac1">アコーディオン１</p>
+                    <ul class="inner">
+                        <li class="content1-1">コンテンツ１</li>
+                        <li class="content1-2">コンテンツ２</li>
+                        <li class="content1-3">コンテンツ３</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="ac2">アコーディオン２</p>
+                    <ul class="inner">
+                        <li class="content2-1">コンテンツ１</li>
+                        <li class="content2-2">コンテンツ２</li>
+                        <li class="content2-3">コンテンツ３</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="ac3">アコーディオン３</p>
+                    <ul class="inner">
+                        <li class="content3-1">コンテンツ１</li>
+                        <li class="content3-2">コンテンツ２</li>
+                        <li class="content3-3">コンテンツ３</li>
+                    </ul>
+                </li>
+            </ul>
+            <script>
+            $(function(){
+
+    //.accordion1の中のp要素がクリックされたら
+	$('.accordion1 p').click(function(){
+
+		//クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
+		$(this).next('ul').slideToggle();
+
+	});
+});
+            </script>
+</body>
+</html>
