@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+/* kv
+-----------------------------------------------*/
+
+.topKv{
+	background:#fff;
+}
+#kvArea{
+	height:480px;
+	margin:70px auto 0;
+	background:#fff;
+}
+#kvArea a{
+	display:block;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#kvArea .kv1,
+#kvArea .kv2,
+#kvArea .kv3{
+	height:480px;
+}
+#kvArea .kv1{
+	background:url(/img/top/kv_gakka.jpg) no-repeat center 0;
+}
+#kvArea .kv1 .btnArea{
+	width:882px;
+	margin:353px auto 0;
+}
+#kvArea .kv2{
+	background:url(/img/top/kv_gakkou.jpg) no-repeat center 0;
+}
+#kvArea .kv2 .btnArea{
+	width:880px;
+	margin:331px auto 0;
+}
+#kvArea .kv3{
+	background:url(/img/top/kv_syusyoku.gif) no-repeat center 0;
+	text-indent:-9999px;
+}
+#kvArea .btnArea span{
+	display:block;
+	width:250px;
+	text-align:center;
+	color:#fff;
+	background:#0054a7;
+	position:relative;
+	font-size:16px;
+	padding:11px 0;
+}
+#kvArea .btnArea span:after{
+	content:"";
+	display: block;
+	width:7px;
+	height:7px;
+	border-top:2px solid #fff;
+	border-right:2px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	right:18px;
+	top:50%;
+	margin-top:-4px;
+}
+
+
+
+/* oc banner
+-----------------------------------------------*/
+.ocArea{
+	height:141px;
+	background:#e5eef6;
+	padding-top:34px;
+}
+
+
+/* MORII NEWS
+-----------------------------------------------*/
+.moriiNews{
+}
+.moriiNews .title{
+	font-size:42px;
+}
+.columnSet{
+	width:990px;
+	margin-right:-10px;
+	clear:both;
+	overflow:hidden;
+	padding-top:2px;
+	margin-top:-2px;
+}
+.columnSet li{
+	width:320px;
+	margin:0 10px 10px 0;
+	float:left;
+	background:#fff;
+	position:relative;
+}
+.columnSet li.new:before{
+	content: " ";
+	width:40px;
+	height:50px;
+	display:block;
+	position:absolute;
+	left:10px;
+	top:-2px;
+	background:url(/img/top/icn_new_l.png) no-repeat 0 0;
+}
+.columnSet li a{
+	color:#333;
+	font-weight:bold;
+	display:block;
+	box-shadow: 0 0 5px #d6d6d6;
+	-moz-box-shadow: 0 0 5px #d6d6d6;
+	-webkit-box-shadow: 0 0 5px #d6d6d6;
+}
+.columnSet li a:hover,
+.wordSet li a:hover p{
+	color:#0054a7;
+}
+.columnSet li a .txt{
+	padding:17px 20px;
+}
+.wordSet{
+	border-bottom:1px solid #ccc;
+	margin-top:30px;
+}
+.wordSet li{
+	border-top:1px solid #ccc;
+}
+.wordSet li a{
+	display:block;
+	padding:10px 20px 9px;
+	clear:both;
+	overflow:hidden;
+	position:relative;
+}
+.wordSet li a:after{
+	content:"";
+	display: block;
+	width:7px;
+	height:7px;
+	border-top:2px solid #333;
+	border-right:2px solid #333;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	right:18px;
+	top:50%;
+	margin-top:-4px;
+}
+.wordSet li a:hover:after{
+	content:"";
+	border-top:2px solid #0054a7;
+	border-right:2px solid #0054a7;
+	opacity:1;
+}
+.wordSet p{
+	color:#333;
+	float:left;
+}
+.wordSet .data{
+	font-size:12px;
+	padding-top:2px;
+	width:110px;
+}
+.wordSet .tit{
+	font-weight:bold;
+}
+.wordSet .tit.new{
+	padding-left:42px;
+	background:url(/img/top/icn_new_m.png) no-repeat 0 2px;
+	font-weight:bold;
+}
+#window .inner{
+	padding:80px 0;
+}
+
+
+/* 学科紹介
+-----------------------------------------------*/
+.gakkaArea .title.top{
+	font-size:40px;
+}
+
+/* フッターリンク
+-----------------------------------------------*/
+.footerLink.sectionBox{
+	background:#fff;
+	padding:80px 0 0;
+}
+.footerLinkTop{
+	width:980px;
+	padding-bottom:40px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.footerLinkTop li{
+	display:inline-block;
+	margin-right:35px;
+}
+.footerLinkTop li:last-child{
+	margin-right:0;
+}
+.footerLinkTop li a{
+	display:block;
+	width:300px;
+	box-shadow: 0 0 5px #d6d6d6;
+	-moz-box-shadow: 0 0 5px #d6d6d6;
+	-webkit-box-shadow: 0 0 5px #d6d6d6;
+}
+.footerLinkTop li a:hover{
+	opacity:0.8;
+}
+.footerLinkTop li a .tit{
+	position:relative;
+	font-size:20px;
+	margin:14px 20px 4px;
+}
+.footerLinkTop li a .tit:after{
+	content:"";
+	display: block;
+	width:7px;
+	height:7px;
+	border-top:2px solid #0054a7;
+	border-right:2px solid #0054a7;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	right:0;
+	top:50%;
+	margin-top:-5px;
+}
+.footerLinkTop li a .txt{
+	padding:0 20px 14px;
+	color:#333;
+}
+.bannerTop{
+	padding-top:40px;
+}
+.bannerTop li{
+	display:inline-block;
+}
+.bannerTop li:first-child{
+	margin-right:35px;
+}
+.bannerTop li a{
+	display:block;
+	box-shadow: 0 0 5px #d6d6d6;
+	-moz-box-shadow: 0 0 5px #d6d6d6;
+	-webkit-box-shadow: 0 0 5px #d6d6d6;
+	width:470px;
+}

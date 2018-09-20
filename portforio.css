@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+body {
+  font-family: 'Merienda', cursive;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.cp_table *, .cp_table *:before, .cp_table *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  .cp_table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+  .cp_table th {
+  width: 13%;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  }
+  .cp_table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  }
+  .cp_table td:first-child {
+  text-align: left;
+  vertical-align: middle;
+  font-weight: bold;
+  }
+  @media only screen and (max-width: 480px) {
+  .cp_table {
+  display: block;
+  width: 100%;
+  }
+  .cp_table thead {
+  display: block;
+  float: left;
+  overflow-x: scroll;
+  }
+  .cp_table tbody {
+  display: block;
+  width: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  }
+  .cp_table th {
+  display: block;
+  width: auto;
+  border-width: 1px 0px 0px 1px;
+  border-color: #dddddd;
+  border-style: solid;
+  }
+  .cp_table th:last-child {
+  border-bottom: 1px solid #dddddd;
+  }
+  .cp_table tbody tr {
+  display: inline-block;
+  margin: 0;
+  }
+  .cp_table td {
+  display: block;
+  border-width: 1px 1px 0px 1px;
+  border-color: #dddddd;
+  border-style: solid;
+  }
+  .cp_table td:last-child {
+  border-bottom: 1px solid #dddddd;
+  }
+  }

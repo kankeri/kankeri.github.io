@@ -1,0 +1,28 @@
+
+   #contact{ 
+        position: relative; 
+    } 
+    
+    #contact h2 { 
+        font-size: 40px; 
+        margin: 100px 0 10px 400px; 
+    } 
+    
+    label{ 
+        font-size: 20px; 
+    } 
+    
+    #Cname { 
+        position: absolute; 
+        margin-left: 450px; 
+        font-family: 'Schoolbell', cursive; 
+        color: #000; 
+    } 
+    #Cmail { 
+        position: absolute; 
+        margin-left: 200px; 
+        margin-top: -55px; 
+    }
+a{
+   text-decoration-color: #fff; 
+}
