@@ -6,8 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
+<script>
+window.addEventListener("load", function(){
+
+  // 画像インデックス
+  var imageIndex = 0;
+
+  // リスナー登録
+  document.getElementsByTagName("button")[0].addEventListener("click", function(){
+      // 画像イメージをインクリメント
+      if (imageIndex < 3) {
+          imageIndex++;
+      } else {
+          imageIndex = 0;
+      }
+      // 画像srcを変更
+      switch(imageIndex) {
+          case 0:
+              imageSrc = "jyobi.png";
+              break;
+          case 1:
+              imageSrc = "scr.png";
+              break;
+          case 2:
+              imageSrc = "scr3.png";
+              break;
+         
+         
+      }
+      document.getElementById("image").src = imageSrc;
+
+  }, false);
+});
+
+document.addEventListener('DOMContentLoaded',function(){
+                 document.getElementById('drop').addEventListener('change',function(){
+                     location.href = "https://kankeri.github.io/" + this.value;
+                 },false);
+             },false);
+</script>
+</head>
 <body>
-    https://www.morijyobi.ac.jp/
+米内幹大という人間がこれまで作った作品集
+      
+    </form>
+<button>次の画像へ</button>
+<nav>
+    <ul　id="menu"></ul>
+    <li><a href="portforio.html">トップ</a></li>
+    <li><a href="pro.html">自己紹介</a></li>
+    <li><a href="toi.html">お問い合わせ</a></li>
+    </ul>
+    </nav>
+<p><img id ="image" src= "jyobi.png"; alt="犬" /></p>
+
+<body>
+    
     <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
 
   <script>
@@ -22,6 +77,8 @@ bubbly({
   velocityFunc:() => 1 + Math.random() * 10,
   radiusFunc:() => Math.random() * 5
 });
+
   </script>
+ 
 </body>
 </html>
